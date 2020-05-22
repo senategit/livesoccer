@@ -20,7 +20,7 @@ import { Test2Component } from './test/test2/test2.component';
 
 const routes: Routes = [
 
-  { path: '', pathMatch: 'full', redirectTo: 'test1' },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'highlights', component: HighlightsComponent },
 
