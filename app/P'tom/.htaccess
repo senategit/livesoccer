@@ -1,0 +1,14 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+RewriteEngine On
+RewriteBase /
+
+Order deny,allow
+Deny from all
+Allow from 157.245.53.61
+Allow from 119.59.125.164
+Allow from 110.169.223.158 
+
+
