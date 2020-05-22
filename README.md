@@ -1,2 +1,0 @@
-# livesoccer
-application
