@@ -5,9 +5,13 @@ import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FooterComponent } from './componnet/footer/footer.component';
-import { HomeComponent } from './componnet/home/home.component';
-import { NewComponent } from './componnet/new/new.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { HomeComponent } from './component/home/home.component';
+import { NewComponent } from './component/new/new.component';
+import { ResultComponent } from './component/result/result.component';
+import { FixtureComponent } from './component/fixture/fixture.component';
+import { TableComponent } from './component/table/table.component';
+import { AnalyzeComponent } from './component/analyze/analyze.component';
 
 // import { from } from 'rxjs';
 
@@ -16,7 +20,11 @@ import { NewComponent } from './componnet/new/new.component';
     AppComponent,
     FooterComponent,
     HomeComponent,
-    NewComponent
+    NewComponent,
+    ResultComponent,
+    FixtureComponent,
+    TableComponent,
+    AnalyzeComponent
   ],
   imports: [
     BrowserModule,
