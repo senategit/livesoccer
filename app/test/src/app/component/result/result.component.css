@@ -7,3 +7,82 @@ p {
 .magin {
     margin: 5px;
 }
+
+.matches {
+    float: left;
+    display: block;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.matches .home {
+    float: left;
+    display: block;
+    width: 148px;
+    height: 40px;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.matches .home span.image {
+    float: right;
+    width: 24px;
+    padding-right: 5px;
+    margin: 8px 0;
+}
+
+
+.matches .home span.team {
+    float: right;
+    padding-right: 5px;
+    margin: 8px 0;
+    overflow: hidden;
+    max-width: 104px;
+    max-height: 25px;
+    color: #222;
+}
+
+
+.matches .status {
+    float: left;
+    width: 42px;
+    height: 38px;
+    margin: 5px 0;
+}
+
+.matches .status span.score_vs {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 0;
+    color: #001640;
+}
+
+.matches .away {
+    float: left;
+    display: block;
+    width: 148px;
+    height: 40px;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.matches .home span.away {
+    float: left;
+    width: 24px;
+    padding-right: 5px;
+    margin: 8px 0;
+}
+
+.matches .home span.away {
+    float: right;
+    padding-right: 5px;
+    margin: 8px 0;
+    overflow: hidden;
+    max-width: 104px;
+    max-height: 25px;
+    color: #222;
+} 
