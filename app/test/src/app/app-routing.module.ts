@@ -9,6 +9,7 @@ import { ResultComponent } from './component/result/result.component';
 import { AnalyzeComponent } from './component/analyze/analyze.component';
 import { TableComponent } from './component/table/table.component';
 import { HomeComponent } from './component/home/home.component';
+import { MenuComponent } from './component/menu/menu.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'fixture', component: FixtureComponent},
   {path: 'result', component: ResultComponent},
   {path: 'table', component: TableComponent},
+  {path: 'menu', component: MenuComponent},
 ];
 
 @NgModule({

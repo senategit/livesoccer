@@ -12,6 +12,7 @@ import { ResultComponent } from './component/result/result.component';
 import { FixtureComponent } from './component/fixture/fixture.component';
 import { TableComponent } from './component/table/table.component';
 import { AnalyzeComponent } from './component/analyze/analyze.component';
+import { MenuComponent } from './component/menu/menu.component';
 
 // import { from } from 'rxjs';
 
@@ -24,7 +25,8 @@ import { AnalyzeComponent } from './component/analyze/analyze.component';
     ResultComponent,
     FixtureComponent,
     TableComponent,
-    AnalyzeComponent
+    AnalyzeComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

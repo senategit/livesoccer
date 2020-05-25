@@ -8,7 +8,9 @@ p {
     margin: 5px;
 }
 
-
+td {
+    font-size: 7px;
+}
 
 .matches {
     float: left;
@@ -88,3 +90,11 @@ p {
     max-height: 25px;
     color: #222;
 } 
+
+
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
