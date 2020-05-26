@@ -13,6 +13,7 @@ import { FixtureComponent } from './component/fixture/fixture.component';
 import { TableComponent } from './component/table/table.component';
 import { AnalyzeComponent } from './component/analyze/analyze.component';
 import { MenuComponent } from './component/menu/menu.component';
+import { PremierComponent } from './component/premierleague/premier/premier.component';
 
 // import { from } from 'rxjs';
 
@@ -26,7 +27,8 @@ import { MenuComponent } from './component/menu/menu.component';
     FixtureComponent,
     TableComponent,
     AnalyzeComponent,
-    MenuComponent
+    MenuComponent,
+    PremierComponent
   ],
   imports: [
     BrowserModule,
