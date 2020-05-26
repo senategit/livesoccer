@@ -1,21 +1,29 @@
 .footer, main-footer  {
+    height: 51px;
     bottom: 0;
     position: fixed;
     width: 100%;
-    font-size: 10px ;
+    font-size: 9px ;
     text-align: center;
     /* padding-top: unset; */
     padding: unset;
     /* height: 60px; */
+
+    padding-top: 0px;
 }
 
 .menu {
    padding: unset;
-    height: 60px;
+    height: 51px;
 } 
 
 .active{
     color: green;
+    /* padding-top: 0px; */
+}
+
+a {
+    padding-top: 2px;
 }
 
 li {

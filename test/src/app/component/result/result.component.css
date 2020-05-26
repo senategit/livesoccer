@@ -1,15 +1,20 @@
-p {
+.head {
     font-size: 20px;
     text-align: center;
     color: white;
 }
 
-.magin {
-    margin: 5px;
+.btn {
+border-radius: unset;
 }
 
-td {
-    font-size: 7px;
+li {
+    font-size: 12px;
+}
+
+.card-primary.card-outline-tabs>.card-header a.active {
+    border-bottom: 3px solid #007bff;
+    border-top: unset;
 }
 
 .matches {
@@ -90,11 +95,3 @@ td {
     max-height: 25px;
     color: #222;
 } 
-
-
-
-.nav-tabs .nav-link.active {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
-}
