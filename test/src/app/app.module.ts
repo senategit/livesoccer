@@ -14,6 +14,10 @@ import { TableComponent } from './component/table/table.component';
 import { AnalyzeComponent } from './component/analyze/analyze.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { PremierComponent } from './component/premierleague/premier/premier.component';
+import { New2Component } from './component/premierleague/new2/new2.component';
+import { MatchComponent } from './component/premierleague/match/match.component';
+import { Analyze2Component } from './component/premierleague/analyze2/analyze2.component';
+import { Table2Component } from './component/premierleague/table2/table2.component';
 
 // import { from } from 'rxjs';
 
@@ -28,7 +32,11 @@ import { PremierComponent } from './component/premierleague/premier/premier.comp
     TableComponent,
     AnalyzeComponent,
     MenuComponent,
-    PremierComponent
+    PremierComponent,
+    New2Component,
+    MatchComponent,
+    Analyze2Component,
+    Table2Component
   ],
   imports: [
     BrowserModule,

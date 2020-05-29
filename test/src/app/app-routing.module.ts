@@ -12,6 +12,7 @@ import { TableComponent } from './component/table/table.component';
 import { HomeComponent } from './component/home/home.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { PremierComponent } from './component/premierleague/premier/premier.component';
+import { New2Component } from './component/premierleague/new2/new2.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
 
 
   {path: 'premier', component: PremierComponent},
+  {path: 'new2', component: New2Component},
 ];
 
 @NgModule({

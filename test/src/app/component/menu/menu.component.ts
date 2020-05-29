@@ -13,9 +13,4 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  premier() {
-    
-  }
-
 }
