@@ -1,4 +1,10 @@
 .head {
+    font-size: 27px;
+    text-align: center;
+    color: white;
+}
+
+.second {
     font-size: 20px;
     text-align: center;
     color: white;
@@ -11,4 +17,24 @@
 
 a {
     color: black;
+}
+
+th {
+    font-size: 11px;
+    /* padding: unset; */
+}
+
+
+.card-primary.card-outline-tabs>.card-header a.active {
+    border-bottom: 3px solid #007bff;
+    border-top: unset;
+}
+
+
+li {
+    font-size: 12px;
+}
+
+.bg {
+    background-color: #38003c;
 }

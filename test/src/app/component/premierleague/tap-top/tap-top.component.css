@@ -1,0 +1,17 @@
+.card-primary.card-outline-tabs>.card-header a.active {
+    border-bottom: 3px solid #007bff;
+    border-top: unset;
+}
+
+li {
+    font-size: 12px;
+}
+
+.bg {
+    background-color: #38003c;
+}
+
+.head {
+    font-size: 17px;
+    color: white;
+}

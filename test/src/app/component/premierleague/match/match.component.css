@@ -1,0 +1,24 @@
+.head {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+border-radius: unset;
+}
+
+li {
+    font-size: 12px;
+}
+
+.card-primary.card-outline-tabs>.card-header a.active {
+    border-bottom: 3px solid #007bff;
+    border-top: unset;
+}
+
+
+.nav-link {
+    display: block;
+    padding: 8px;
+}

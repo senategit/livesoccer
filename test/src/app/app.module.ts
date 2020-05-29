@@ -18,6 +18,11 @@ import { New2Component } from './component/premierleague/new2/new2.component';
 import { MatchComponent } from './component/premierleague/match/match.component';
 import { Analyze2Component } from './component/premierleague/analyze2/analyze2.component';
 import { Table2Component } from './component/premierleague/table2/table2.component';
+import { StatisComponent } from './component/premierleague/statis/statis.component';
+import { TapTopComponent } from './component/premierleague/tap-top/tap-top.component';
+import { StarComponent } from './component/premierleague/star/star.component';
+import { AssistComponent } from './component/premierleague/assist/assist.component';
+import { CleanSheetComponent } from './component/premierleague/clean-sheet/clean-sheet.component';
 
 // import { from } from 'rxjs';
 
@@ -36,7 +41,12 @@ import { Table2Component } from './component/premierleague/table2/table2.compone
     New2Component,
     MatchComponent,
     Analyze2Component,
-    Table2Component
+    Table2Component,
+    StatisComponent,
+    TapTopComponent,
+    StarComponent,
+    AssistComponent,
+    CleanSheetComponent
   ],
   imports: [
     BrowserModule,
