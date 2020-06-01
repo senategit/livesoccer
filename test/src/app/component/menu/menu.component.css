@@ -1,3 +1,9 @@
 a {
     color: white;
 }
+
+.bg {
+    width: 100%; top: 0px; 
+    background-color: #15985ef7;
+    min-height: 812px;
+}
