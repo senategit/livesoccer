@@ -1,0 +1,74 @@
+function getNextAllMatch($league){
+global $dateEN,$dateTH,$fullname_league,$fullthname_league,$upper_file,$logo_league;
+    $path=public_base_directory();
+	$outStr='';
+	$var='';
+	$top='<div class="sidebar"><div class="titleContentRightBar_r"><h3>โปรแกรมแข่งขันบอล '.$fullthname_league[$league].'</h3></div>';
+	$header='<div class="league-fixture-sidebar">';
+	$footer='<div class="footer"><div class="btn_next_page"><a href="'.$path.$fullname_league[$league].'/fixtures/index.php" title="ดูโปรแกรมแข่งขัน '.$fullthname_league[$league].' ทั้งหมด">ดูโปรแกรมแข่งขันทั้งหมด</a></div></div></div></div>';
+    $content=array();
+	$content=getJsonCurl(site_name.'/portal/JSonData/'.$upper_file[$league].'/fixtures.json');
+	if($content["fixtures"]){
+		foreach($content['fixtures'] as $k => $v) {
+            $league_wname=$v['league_wname'];
+            $name_league=$v['league_name'];
+            $season=$v['season'];
+			$datetime=$v['datetime'];
+			$id_home=$v['id_home'];
+			$id_away=$v['id_away'];
+			$en_home=$v['name']['en_home'];
+			$en_away=$v['name']['en_away'];  
+			$full_home=$v['name']['full_home'];
+			$full_away=$v['name']['full_away'];
+			$short_home=$v['name']['short_home'];
+			$short_away=$v['name']['short_away'];
+			$logo_home=$v['logo_home'];
+			$logo_away=$v['logo_away'];
+			$score_home=$v['score']['score_home'];
+			$score_away=$v['score']['score_away'];
+            $score_halftime=$v['score']['score_halftime'];
+			$match_status=$v['match_status'];
+			$match_day=$v['match_day'];    
+            $match_week=$v['match_week'];    
+            $overview_url=$v['datalink']['overview'];
+            /*** DateTime ***/
+            $format_datetime= date("Y-m-d H:i",strtotime($datetime));
+            $th_time= date("H:i",strtotime($datetime));
+            if($league==6 || $league==10){
+                $addtimezone='Asia/Bangkok'; 
+            } else {
+                $addtimezone='America/Puerto_Rico'; 
+            }
+            $date_timezone = new DateTime($format_datetime, new DateTimeZone('Asia/Bangkok')); 
+            date_default_timezone_set($addtimezone); 
+            $date_default=date("วันDที่ j M Y", $date_timezone->format('U')); 
+            /*** Name Format ***/
+            $name_uhome=str_replace(' ','-',$en_home);
+            $name_uaway=str_replace(' ','-',$en_home);
+
+			if($var=='' || $var!=$date_default){
+				$outStr.='<div class="daymatches">'.str_replace($dateEN,$dateTH,$date_default).'</div>';
+			}
+            
+			if($overview_url!='-'){
+                $outStr.='<a href="'.$overview_url.'" title="พรีวิว '.$full_home.' vs '.$full_away.'"><div class="matches">
+                <div class="home"><span class="image"><img src="'.$logo_home.'" alt="'.$full_home.'"></span><span class="team">'.$short_home.'</span></div>
+                <div class="status"><span class="time_vs">'.$th_time.'</span></div>
+                <div class="away"><span class="image"><img src="'.$logo_away.'" alt="'.$full_away.'"></span><span class="team">'.$short_away.'</span></div>
+            </div></a>
+';
+
+			} else {
+                $outStr.='<div class="matches">
+                    <a href="'.$path.$league_wname.'/teams/'.$name_uhome.'/index.php" title="'.$full_home.'" target="_blank"><div class="home"><span class="image"><img src="'.$logo_home.'" alt="'.$full_home.'"></span><span class="team">'.$short_home.'</span></div></a>
+                    <div class="status"><span class="time_vs">'.$th_time.'</span></div>
+                    <a href="'.$path.$league_wname.'/teams/'.$name_uaway.'/index.php" title="'.$full_away.'" target="_blank"><div class="away"><span class="image"><img src="'.$logo_away.'" alt="'.$full_away.'"></span><span class="team">'.$short_away.'</span></div></a>
+                </div>
+'; 
+            }
+			$var=$date_default;
+		}
+	} else 
+		$outStr='<div class="daymatches">ไม่มีรายการแข่งขัน</div>';
+	return $top.$header.$outStr.$footer;
+}
