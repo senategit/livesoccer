@@ -1,0 +1,13 @@
+.center {
+    text-align: center; 
+}
+
+.rigth {
+    float: right; 
+    font-size: 9px;
+}
+
+.head {
+font-size: 22px;   
+background-color: #ECECEC; 
+}

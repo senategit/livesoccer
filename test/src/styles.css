@@ -8,3 +8,16 @@ body{
 .bg {
     background-color: green;
 }
+
+
+li{
+    list-style: none;
+}
+
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: unset;
+    border: 1px solid transparent;
+}
