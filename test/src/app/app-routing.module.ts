@@ -4,14 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 // import { AppRoutingModule } from './app-routing.module'
 
 
+// livesoccer 888
 import { FooterComponent } from './component/livesoccer/footer/footer.component';
 import { NewComponent } from './component/livesoccer/new/new.component';
 import { FixtureComponent } from './component/livesoccer/fixture/fixture.component';
 import { ResultComponent } from './component/livesoccer/result/result.component';
 import { AnalyzeComponent } from './component/livesoccer/analyze/analyze.component';
+import { ReadAnalyzeComponent } from './component/livesoccer/read-analyze/read-analyze.component';
 import { TableComponent } from './component/livesoccer/table/table.component';
 import { HomeComponent } from './component/livesoccer/home/home.component';
 import { MenuComponent } from './component/livesoccer/menu/menu.component';
+import { ReadNewComponent } from './component/livesoccer/read-new/read-new.component';
+import { ReportComponent } from './component/livesoccer/report/report.component';
+
 
 // premierleague ENG
 import { PremierComponent } from './component/premierleague/premier/premier.component';
@@ -35,7 +40,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'new', component: NewComponent },
+  { path: 'read-new', component: ReadNewComponent},
   { path: 'analyze', component: AnalyzeComponent },
+  { path: 'read-analyze', component: ReadAnalyzeComponent },
   { path: 'fixture', component: FixtureComponent },
   { path: 'result', component: ResultComponent },
   { path: 'table', component: TableComponent },
@@ -43,6 +50,7 @@ const routes: Routes = [
 
 
   // premierleague ENG
+  { path: 'premier', redirectTo: 'premier/new2' },
   { path: 'premier', component: PremierComponent },
   { path: 'new2', component: New2Component },
   { path: 'analyze2', component: Analyze2Component },
@@ -52,6 +60,7 @@ const routes: Routes = [
   { path: 'star', component: StarComponent },
   { path: 'assist', component: AssistComponent },
   { path: 'clean-sheet', component: CleanSheetComponent },
+  { path: 'report', component: ReportComponent},
 
   // bundesliga GER
   { path: 'bundesliga', redirectTo: 'bundesliga/new' },

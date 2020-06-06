@@ -9,11 +9,14 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './component/livesoccer/footer/footer.component';
 import { HomeComponent } from './component/livesoccer/home/home.component';
 import { NewComponent } from './component/livesoccer/new/new.component';
+import { ReadNewComponent } from './component/livesoccer/read-new/read-new.component';
 import { ResultComponent } from './component/livesoccer/result/result.component';
 import { FixtureComponent } from './component/livesoccer/fixture/fixture.component';
 import { TableComponent } from './component/livesoccer/table/table.component';
 import { AnalyzeComponent } from './component/livesoccer/analyze/analyze.component';
+import { ReadAnalyzeComponent } from './component/livesoccer/read-analyze/read-analyze.component';
 import { MenuComponent } from './component/livesoccer/menu/menu.component';
+
 
 // premierleague ENG
 import { PremierComponent } from './component/premierleague/premier/premier.component';
@@ -34,6 +37,7 @@ import { MatchGerComponent } from './component/bundesliga/match-ger/match-ger.co
 import { AnalyzeGerComponent } from './component/bundesliga/analyze-ger/analyze-ger.component';
 import { TableGerComponent } from './component/bundesliga/table-ger/table-ger.component';
 import { StatisGerComponent } from './component/bundesliga/statis-ger/statis-ger.component';
+import { ReportComponent } from './component/livesoccer/report/report.component';
 
 // import { from } from 'rxjs';
 
@@ -64,6 +68,9 @@ import { StatisGerComponent } from './component/bundesliga/statis-ger/statis-ger
     AnalyzeGerComponent,
     TableGerComponent,
     StatisGerComponent,
+    ReadNewComponent,
+    ReadAnalyzeComponent,
+    ReportComponent,
   ],
   imports: [
     BrowserModule,

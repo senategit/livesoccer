@@ -7,6 +7,7 @@ body{
 
 .bg {
     background-color: green;
+    height: 55px;
 }
 
 
@@ -14,10 +15,20 @@ li{
     list-style: none;
 }
 
-
 .navbar {
     position: relative;
     min-height: 50px;
     margin-bottom: unset;
     border: 1px solid transparent;
+}
+
+
+.livesoc {
+    background-image: 'assets/photo/Photo-app.jpg';
+}
+
+.report {
+    background-color: #141E28 ;
+    height: 187px;
+    padding: 20px;
 }
