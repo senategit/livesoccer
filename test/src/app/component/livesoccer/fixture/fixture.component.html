@@ -26,8 +26,9 @@
         </li>
 
         <li class="nav-item active">
-          <a class="nav-link active" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages"
-            role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">28 พ.ค.</a>
+          <a class="nav-link active" id="custom-tabs-four-messages-tab" data-toggle="pill"
+            href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages"
+            aria-selected="false">28 พ.ค.</a>
         </li>
 
         <li class="nav-item">
@@ -45,23 +46,30 @@
   </div>
 </div>
 
-
-<div class="col-md-12">
-  <p style="font-size: 16px; float: left;">บุนเดสลีกา</p>
-  <p style="font-size: 12px; float: right;">สัปดาห์ที่</p>
-</div>
-
-<table>
+<table class="table">
   <tbody>
     <tr *ngFor="let item of datafixture">
-      <td>{{item.name.short_home}} &nbsp; <img src="{{item.logo_home}}"></td>
-
+      <td>FT</td>
+      <td style="float: right;">{{item.name.short_home}}</td>
+      <td><img src="{{item.logo_home}}"></td>
       <td>{{item.datetime | date:'HH:mm'}}</td>
-
-      <td><img src="{{item.logo_away}}"> &nbsp; {{item.name.short_away}}</td>
+      <td><img src="{{item.logo_away}}"></td>
+      <td>{{item.name.short_away}}</td>
+      <td><img src="assets/logo/Bundesliga.png" style="width: 24px; height: 24px;"></td>
     </tr>
   </tbody>
 </table>
+
+<!-- <table class="table">
+  <tbody>
+    <tr>
+      <th style="font-size: 14px; padding-top: 20px;">11 พ.ค.</th>
+      <td style="padding-top: 20px;"><img src="assets/logo/premier.png" alt="premier" style="height: 30px; width: 30px;"></td>
+      <td style="font-size: 16px; padding-top: 20px;">อาร์เซนอล vs ลิเวอร์พูล</td>
+      <td style="padding-top: 20px;" class="ml-3"> <a href="#" class="next round" style="float: right;">&#8250;</a></td>
+    </tr>
+  </tbody>
+</table> -->
 
 <!-- <div class="col-md-12 row" *ngFor="let item of datafixture">
   <div class="col-md-5">
