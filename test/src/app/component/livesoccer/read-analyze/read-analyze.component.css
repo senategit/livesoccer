@@ -1,10 +1,11 @@
-.head {
-    font-size: 17px;
-    text-align: center;
+.form-group {
     color: white;
 }
 
-.back {
-    font-size: 11px;
+li {
+    padding-left: 20px;
+}
+
+.p {
     color: white;
 }

@@ -3,7 +3,7 @@
         <p class="fa fa-angle-left fa-w-14" style="font-size: 11px; float: left;" (click)="back()">&nbsp;
             กลับ</p>
         <div style="text-align: center;">
-            <p>รีพอร์ต บาร์เซโลน่า vs เซบีย่า</p>
+            <p>วิเคราะห์ บาร์เซโลน่า vs เซบีย่า</p>
         </div>
     </div>
 
@@ -11,17 +11,45 @@
         <p style="text-align: center;">สับดาห์ที่ 25</p>
     </div>
 
-    <div class="row">
-        <img src="" alt="">
+    <div class="row col-12 no-padding" style="padding-left: 30px;">
+        <div class="col-3 no-padding"><img src="assets/photo/arsenal.png" style="width: 68px; height: 68px;">
+            <p class="p">อาร์เซน่อล</p>
+        </div>
+        <div class="col-6 no-padding" style="text-align: center; font-size: 26px;">
+            <p class="p">11 มิถุนายน</p>
+            <p class="p">18.30</p>
+        </div>
+        <div class="col-3 no-padding"><img src="assets/photo/liverpool.png" style="width: 68px; height: 68px;">
+            <p class="p">ลิเวอร์พูล</p>
+        </div>
     </div>
 </nav>
 
-<div class="col-md-12 no-padding">
-    <div class="tab">
-        <ul class="nav headnav-tab text-center" id="tab">
-            <li><a data-toggle="tab" href="#report1">ไทม์ไลน์</a></li>
-            <li><a data-toggle="tab" href="#report2" class="">สถิติหลังเกม</a></li>
-            <li><a data-toggle="tab" href="#report3" class="">รายชื่อผู้เล่น</a></li>
-        </ul>
+<div style="background-color: #ECECEC;">
+    <div class="col-md-12 no-padding">
+        <div class="tab">
+            <ul class="nav headnav-tab text-center" id="tab">
+                <li class="active"><a data-toggle="tab" href="#analyze1">วิเคราะห์บอล</a></li>
+                <li><a data-toggle="tab" href="#analyze2" >สถิติก่อนเกม</a></li>
+                <li><a data-toggle="tab" href="#analyze3" >รายชื่อผู้เล่น</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box-body">
+        <div class="tab-content">
+            <div class="tab-pane active" id="analyze1">
+                <app-tap-analyza></app-tap-analyza>
+            </div>
+
+            <div class="tab-pane" id="analyze2">
+                <app-tap-before></app-tap-before>
+            </div>
+
+            <div class="tab-pane" id="analyze3">
+            <app-tap-name></app-tap-name>
+            </div>
+
+        </div>
     </div>
 </div>

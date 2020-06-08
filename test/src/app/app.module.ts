@@ -38,6 +38,10 @@ import { AnalyzeGerComponent } from './component/bundesliga/analyze-ger/analyze-
 import { TableGerComponent } from './component/bundesliga/table-ger/table-ger.component';
 import { StatisGerComponent } from './component/bundesliga/statis-ger/statis-ger.component';
 import { ReportComponent } from './component/livesoccer/report/report.component';
+import { TapAnalyzaComponent } from './component/livesoccer/tap-analyza/tap-analyza.component';
+import { TapBeforeComponent } from './component/livesoccer/tap-before/tap-before.component';
+import { TapAfterComponent } from './component/livesoccer/tap-after/tap-after.component';
+import { TapNameComponent } from './component/livesoccer/tap-name/tap-name.component';
 
 // import { from } from 'rxjs';
 
@@ -71,6 +75,10 @@ import { ReportComponent } from './component/livesoccer/report/report.component'
     ReadNewComponent,
     ReadAnalyzeComponent,
     ReportComponent,
+    TapAnalyzaComponent,
+    TapBeforeComponent,
+    TapAfterComponent,
+    TapNameComponent,
   ],
   imports: [
     BrowserModule,
