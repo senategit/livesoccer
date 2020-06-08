@@ -10,7 +10,6 @@ body{
     height: 55px;
 }
 
-
 li{
     list-style: none;
 }
@@ -22,13 +21,19 @@ li{
     border: 1px solid transparent;
 }
 
-
 .livesoc {
     background-image: 'assets/photo/Photo-app.jpg';
 }
 
 .report {
     background-color: #141E28 ;
+    height: 187px;
+    padding: 20px;
+}
+
+
+.analyze {
+    background:url('assets/pattern-app/Livesoccer.jpg');
     height: 187px;
     padding: 20px;
 }
