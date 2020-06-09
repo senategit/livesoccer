@@ -1,4 +1,3 @@
-import { Analyze2Component } from './component/premierleague/analyze2/analyze2.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // import { AppRoutingModule } from './app-routing.module'
@@ -20,10 +19,11 @@ import { ReportComponent } from './component/livesoccer/report/report.component'
 
 // premierleague ENG
 import { PremierComponent } from './component/premierleague/premier/premier.component';
-import { New2Component } from './component/premierleague/new2/new2.component';
-import { MatchComponent } from './component/premierleague/match/match.component';
-import { Table2Component } from './component/premierleague/table2/table2.component';
-import { StatisComponent } from './component/premierleague/statis/statis.component';
+import { AnalyzeEngComponent } from './component/premierleague/analyze-eng/analyze-eng.component';
+import { NewEngComponent } from './component/premierleague/new-eng/new-eng.component';
+import { MatchEngComponent } from './component/premierleague/match-eng/match-eng.component';
+import { TableEngComponent } from './component/premierleague/table-eng/table-eng.component';
+import { StatisEngComponent } from './component/premierleague/statis-eng/statis-eng.component';
 import { StarComponent } from './component/premierleague/star/star.component';
 import { AssistComponent } from './component/premierleague/assist/assist.component';
 import { CleanSheetComponent } from './component/premierleague/clean-sheet/clean-sheet.component';
@@ -40,7 +40,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'new', component: NewComponent },
-  { path: 'read-new', component: ReadNewComponent},
+  { path: 'read-new', component: ReadNewComponent },
   { path: 'analyze', component: AnalyzeComponent },
   { path: 'read-analyze', component: ReadAnalyzeComponent },
   { path: 'fixture', component: FixtureComponent },
@@ -50,17 +50,17 @@ const routes: Routes = [
 
 
   // premierleague ENG
-  { path: 'premier', redirectTo: 'premier/new2' },
+  { path: 'premier', redirectTo: 'premier' },
   { path: 'premier', component: PremierComponent },
-  { path: 'new2', component: New2Component },
-  { path: 'analyze2', component: Analyze2Component },
-  { path: 'match', component: MatchComponent },
-  { path: 'table2', component: Table2Component },
-  { path: 'statis', component: StatisComponent },
+  { path: 'new-eng', component: NewEngComponent },
+  { path: 'analyze-eng', component: AnalyzeEngComponent },
+  { path: 'match', component: MatchEngComponent },
+  { path: 'table-eng', component: TableEngComponent },
+  { path: 'statis', component: StatisEngComponent },
   { path: 'star', component: StarComponent },
   { path: 'assist', component: AssistComponent },
   { path: 'clean-sheet', component: CleanSheetComponent },
-  { path: 'report', component: ReportComponent},
+  { path: 'report', component: ReportComponent },
 
   // bundesliga GER
   { path: 'bundesliga', redirectTo: 'bundesliga/new' },

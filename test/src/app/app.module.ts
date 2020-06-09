@@ -20,11 +20,11 @@ import { MenuComponent } from './component/livesoccer/menu/menu.component';
 
 // premierleague ENG
 import { PremierComponent } from './component/premierleague/premier/premier.component';
-import { New2Component } from './component/premierleague/new2/new2.component';
-import { MatchComponent } from './component/premierleague/match/match.component';
-import { Analyze2Component } from './component/premierleague/analyze2/analyze2.component';
-import { Table2Component } from './component/premierleague/table2/table2.component';
-import { StatisComponent } from './component/premierleague/statis/statis.component';
+import { NewEngComponent } from './component/premierleague/new-eng/new-eng.component';
+import { MatchEngComponent } from './component/premierleague/match-eng/match-eng.component';
+import { AnalyzeEngComponent } from './component/premierleague/analyze-eng/analyze-eng.component';
+import { TableEngComponent } from './component/premierleague/table-eng/table-eng.component';
+import { StatisEngComponent } from './component/premierleague/statis-eng/statis-eng.component';
 import { TapTopComponent } from './component/premierleague/tap-top/tap-top.component';
 import { StarComponent } from './component/premierleague/star/star.component';
 import { AssistComponent } from './component/premierleague/assist/assist.component';
@@ -57,11 +57,11 @@ import { TapNameComponent } from './component/livesoccer/tap-name/tap-name.compo
     AnalyzeComponent,
     MenuComponent,
     PremierComponent,
-    New2Component,
-    MatchComponent,
-    Analyze2Component,
-    Table2Component,
-    StatisComponent,
+    NewEngComponent,
+    MatchEngComponent,
+    AnalyzeEngComponent,
+    TableEngComponent,
+    StatisEngComponent,
     TapTopComponent,
     StarComponent,
     AssistComponent,

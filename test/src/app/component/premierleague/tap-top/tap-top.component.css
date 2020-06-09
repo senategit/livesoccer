@@ -1,22 +1,11 @@
-.card-primary.card-outline-tabs>.card-header a.active {
-    border-bottom: 3px solid #007bff;
-    border-top: unset;
+
+
+.tab{
+    padding-top: 0px;
 }
 
-li {
-    font-size: 12px;
-    padding-right: 10px;
+.dropdown-toggle:empty::after,
+.dropdown-toggle::after,
+.dropdown-backdrop{
+    display: none;
 }
-
-.bg {
-    background-color: #38003c;
-}
-
-.head {
-    font-size: 17px;
-    color: white;
-}
-
-
-
-

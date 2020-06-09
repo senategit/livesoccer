@@ -1,0 +1,137 @@
+<app-tap-top></app-tap-top>
+
+<section class="content">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+    </ol>
+  
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="carousel-caption">
+          บุนเดสลีกา สัปดาห์ที่ 1
+        </div>
+  
+        <table class="table" value="1">
+          <!-- <thead>
+            <tr>
+            <tr>
+              <th>บุนเดสลีกา</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>สัปดาห์ที่</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr *ngFor="let item of datafixture">
+              <!-- <th scope="row">1</th> -->
+              <td style="float: left;">{{item.name.short_home}}</td>
+              <td><img src="{{item.logo_home}}"></td>
+              <td>{{item.datetime | date:'HH:mm'}}</td>
+        
+              <td><img src="{{item.logo_away}}"></td>
+              <td style="float: right;">{{item.name.short_away}}</td>
+            </tr>
+        
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="item">
+        <div class="carousel-caption">
+          บุนเดสลีกา สัปดาห์ที่ 2
+        </div>
+  
+        <table class="table" value="1">
+          <tbody>
+            <tr *ngFor="let item of datafixture">
+              <!-- <th scope="row">1</th> -->
+              <td style="float: left;">{{item.name.short_home}}</td>
+              <td><img src="{{item.logo_home}}"></td>
+              <td>{{item.datetime | date:'HH:mm'}}</td>
+        
+              <td><img src="{{item.logo_away}}"></td>
+              <td style="float: right;">{{item.name.short_away}}</td>
+            </tr>
+        
+          </tbody>
+        </table>
+        
+      </div>
+  
+      <div class="item">
+        <div class="carousel-caption">
+          บุนเดสลีกา สัปดาห์ที่ 3
+        </div>
+  
+        <table class="table" value="1">
+          <tbody>
+            <tr *ngFor="let item of datafixture">
+              <!-- <th scope="row">1</th> -->
+              <td style="float: left;">{{item.name.short_home}}</td>
+              <td><img src="{{item.logo_home}}"></td>
+              <td>{{item.datetime | date:'HH:mm'}}</td>
+        
+              <td><img src="{{item.logo_away}}"></td>
+              <td style="float: right;">{{item.name.short_away}}</td>
+            </tr>
+        
+          </tbody>
+        </table>
+  
+      </div>
+  
+      <div class="item">
+        <div class="carousel-caption">
+          บุนเดสลีกา สัปดาห์ที่ 4
+        </div>
+  
+        <table class="table" value="1">
+          <tbody>
+            <tr *ngFor="let item of datafixture">
+              <!-- <th scope="row">1</th> -->
+              <td style="float: left;">{{item.name.short_home}}</td>
+              <td><img src="{{item.logo_home}}"></td>
+              <td>{{item.datetime | date:'HH:mm'}}</td>
+        
+              <td><img src="{{item.logo_away}}"></td>
+              <td style="float: right;">{{item.name.short_away}}</td>
+            </tr>
+        
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="item">
+        <div class="carousel-caption">
+          บุนเดสลีกา สัปดาห์ที่ 5
+        </div>
+  
+        <table class="table" value="1">
+          <tbody>
+            <tr *ngFor="let item of datafixture">
+              <!-- <th scope="row">1</th> -->
+              <td style="float: left;">{{item.name.short_home}}</td>
+              <td><img src="{{item.logo_home}}"></td>
+              <td>{{item.datetime | date:'HH:mm'}}</td>
+        
+              <td><img src="{{item.logo_away}}"></td>
+              <td style="float: right;">{{item.name.short_away}}</td>
+            </tr>
+        
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="fa fa-angle-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="fa fa-angle-right"></span>
+    </a>
+  </div>
+</section>
